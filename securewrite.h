@@ -67,6 +67,6 @@ int read_back_data(int start_row, int num_rows, int blocks_to_read, FILE* output
 }
 
 int lock_data(FILE* output){
-    char* cmd = "/opt/vc/bin/vcmailbox 0x0038021 8 8 0xffffffff 0xaffe0000"
+    char* cmd = "/opt/vc/bin/vcmailbox 0x0038021 8 8 0xffffffff 0xaffe0000";
     output = popen(cmd, "r");
 }
