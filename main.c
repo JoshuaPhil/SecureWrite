@@ -3,10 +3,11 @@
 #include <string.h>
 #include "securewrite.h"
 
+
+
 int main(){
-    FILE *o1, *o2, *o3;
-    write_to_customer_otp(1, 2, 3, o1);
-    read_back_data(1, 2, 3, o2);
-    lock_data(o3);
+    write_to_customer_otp(1, 2, 3);
+    read_back_data(1, 2, 3);
+    lock_data();
     return 0;
 }
